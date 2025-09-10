@@ -83,7 +83,16 @@ This is a conceptual prototype — collaboration welcome.
 
 Contributions, questions, and critiques are welcome. Please open an issue to discuss ideas or a PR with proposed changes. If you have strong views on representation learning, grounding, or analogy, we’d love your perspective.
 
+## Open Source & License
+
+This project is intentionally open-source and collaborative. We welcome ideas, critiques, experiments, and extensions from researchers, engineers, and artists.
+
+- Content (docs, text, diagrams): Creative Commons Attribution 4.0 International — CC BY 4.0. See `LICENSE-CC-BY-4.0.md`.
+- Code samples and scripts: MIT License. See `LICENSE`.
+- By contributing, you agree to license your contributions under the same terms.
+
+Badges: [![CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey)](https://creativecommons.org/licenses/by/4.0/) [![MIT](https://img.shields.io/badge/code-MIT-blue)](LICENSE)
+
 ---
 
 > In essence: The Seer understands without words. The Scribe gives words to what is perceived. Together they build an engine of insight, analogy, and cross-domain resonance — a growing, testable world model.
-
