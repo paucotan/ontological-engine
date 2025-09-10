@@ -1,5 +1,10 @@
 <div align="center">
 
+<a href="onto-engine.png">
+  <img src="onto-engine.png" alt="Seer–Scribe Ontological Engine logo" width="180">
+  
+</a>
+
 # The Seer–Scribe Ontological Engine
 
 [![status: concept](https://img.shields.io/badge/status-concept-blueviolet)](#)
