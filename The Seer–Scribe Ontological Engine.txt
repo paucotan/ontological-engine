@@ -8,6 +8,19 @@ The Seer–Scribe Ontological Engine is a two-part framework for building machin
 	•	A Conductor orchestrates their interaction in a simple loop: Sense → Say → Check.
 	•	Together, they build a growing castle of understanding: each “brick” = one discovered motif, its label, its boundaries, and examples across domains.
 
+
+The Seer–Scribe Ontological Engine
+
+A biomimetic framework for systems that don’t just process information — they begin to understand.
+
+Abstract
+We propose a two-part cognitive architecture, the Seer–Scribe Ontological Engine, inspired by the human perception-to-language pipeline. Just as the human eye and visual cortex transform photons into shapes before the brain encodes meaning and words, our system separates perception from expression to build a more grounded form of understanding.
+	•	Seer: A self-supervised vision model (e.g., DINO/JEPA) that functions like a synthetic retina–visual cortex. It learns directly from raw inputs (images, video, graphs) without labels, discovering recurring geometric motifs — branching, loops, flows, meshes — encoded as latent structures in its representational space.
+	•	Scribe: A large language or vision–language model that plays the role of the linguistic cortex. It interprets the Seer’s latent motifs, attaching words, metaphors, and boundaries (e.g., “branching flow” breaks when paths form closed loops).
+	•	Conductor: A lightweight controller that mirrors attentional circuits, orchestrating a loop of Sense (Seer) → Say (Scribe) → Check (contrast and refinement).
+	•	Castle (Memory): A growing library of “bricks” (stable motifs) analogous to hippocampal consolidation, each containing a sketch, label, examples, and failure cases.
+
+By mimicking this human-like separation of vision and language, the Seer–Scribe system allows geometry to emerge from light-driven perception before being translated into words. This separation enables discovery of cross-domain principles — rivers and veins converging as “branching flow” — and the construction of an encyclopedia of motifs that resonates across domains. In doing so, the Ontological Engine moves beyond information processing toward anatomies of understanding, grounded in the geometry of the world.
 ⸻
 
 🤔 Why It Matters
