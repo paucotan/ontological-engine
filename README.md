@@ -14,8 +14,19 @@
 
 </div>
 
+## Abstract
+
+We propose a two-part cognitive architecture, the Seer–Scribe Ontological Engine, designed to emulate the process of understanding through the interplay of perception and language.
+
+- The **Seer** is a JEPA/DINO-style self-supervised model that learns directly from raw inputs (images, video, graphs) without labels, discovering the geometry of meaning — structural patterns, relations, and transformations (e.g., branching, flow, loops, feedback). It outputs compact shape summaries (exemplars, relation sketches, contrasts, transformations) rather than symbolic categories.
+- The **Scribe** is a large language or vision–language model that interprets the Seer’s summaries and translates them into words, metaphors, and concise hypotheses. It proposes candidate labels, articulates boundaries (where a concept breaks), and refines descriptions by testing against contrasts provided by the Seer (nearest cousin and clean opposite examples).
+- The **Conductor** manages a loop of Sense (Seer) → Say (Scribe) → Check (contrast and refinement). When stable, knowledge is stored as a “brick” in memory, building a growing castle of understanding.
+
+Separating perception (geometry) from expression (language) — and enforcing boundaries through contrast — enables discovery of cross‑domain principles and zero‑shot analogies (e.g., aligning branching flow in rivers, traffic networks, and vascular systems). Together, the Seer and Scribe move beyond information processing toward understanding, constructing meaning through resonance between shapes and words.
+
 ## Table of Contents
 
+- [Abstract](#abstract)
 - [Concept](#concept)
 - [Why It Matters](#why-it-matters)
 - [How It Works](#how-it-works)
