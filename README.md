@@ -16,7 +16,10 @@
 
 ## Abstract
 
+
 We propose a two-part cognitive architecture, the Seer–Scribe Ontological Engine, inspired by the human perception-to-language pipeline. Just as the eye and visual cortex transform photons into shapes before the brain encodes meaning and words, our system separates perception from expression to build a more grounded form of understanding.
+
+Recent advances such as [DINOv3](https://ai.meta.com/dinov3/) demonstrate this perceptual grounding at scale, and the Ontological Engine builds on such models by emphasizing separation of geometry and language, iterative refinement, and structured memory.
 
 - The **Seer** is a self-supervised vision model (e.g., DINO/JEPA) functioning like a synthetic retina–visual cortex. It learns directly from raw inputs (images, video, graphs) without labels, discovering recurring geometric motifs — branching, loops, flows, meshes — encoded as latent structures in its representational space. These motifs live in the Seer’s latent space — a high-dimensional map where similar shapes cluster together (rivers, veins, trees).
 - The **Scribe** is a large language or vision–language model playing the role of the linguistic cortex. It interprets the Seer’s latent motifs, attaching words, metaphors, and boundaries (e.g., “branching flow” breaks when paths form closed loops).
@@ -76,6 +79,7 @@ Example: rivers → “branching flow”
    - Brick stored: `{sketch, label, essence, examples, where-it-breaks}`.
    - Over time: build an encyclopedia of motifs — the foundations of a world model.
 
+
 ## What This Builds
 
 - **Foundation:** A geometry‑based perception engine (Seer).
@@ -83,12 +87,24 @@ Example: rivers → “branching flow”
 - **Towers:** Cross‑domain analogies (traffic, rivers, vasculature).
 - **Empire:** A growing, testable world model of patterns and principles.
 
+## The Castle (Dynamic Memory)
+
+The Castle is not a static library, but a dynamic, evolving memory structure:
+
+- Each "brick" is a hypothesis — a motif paired with a label and a boundary.
+- Bricks can be reinforced (strengthened), replaced, or revised as new evidence arrives.
+- The Castle keeps a version history of motifs (e.g., v1, v2), tracking how concepts evolve.
+- Confidence scores determine how stable or tentative a brick is within the Castle.
+- Sometimes, foundational bricks are replaced, leading to "castle quakes" — major restructuring of the ontology.
+- This dynamic property mirrors human cognition, where knowledge is continually updated, sometimes painfully, when foundational beliefs shift.
+
 ## Next Steps
 
 This is a conceptual prototype — we welcome collaboration!
 
 1. **MVP idea**
    - Use a DINO/JEPA model as Seer (via API).
+     - Reference: [DINOv3 by Meta](https://ai.meta.com/dinov3/)
    - Use ChatGPT (or a vision–language model) as Scribe.
    - Controller = a lightweight script for the Sense → Say → Check loop.
    - Visualize embeddings with UMAP or t-SNE.
